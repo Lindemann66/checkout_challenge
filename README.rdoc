@@ -1,0 +1,13 @@
+Launch
+
+- rbenv install 2.5.5
+- bundle install
+- bundle exec ruby supermarket.rb
+
+-> checkout = Checkout.new
+-> checkout.scan("GR1")
+-> checkout.scan("GR1")
+-> price = checkout.total
+
+For tests
+- bundle exec rspec spec

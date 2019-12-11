@@ -1,0 +1,25 @@
+default: &DEFAULT
+  items_meta:
+    GR1:
+      name: Green tea
+      price: 3.11
+    SR1:
+      name: Strawberries
+      price: 5.0
+      promo_price: 4.5
+    CF1:
+      name: Coffee
+      price: 11.23
+
+development:
+  <<: *DEFAULT
+
+production:
+  <<: *DEFAULT
+
+staging:
+  <<: *DEFAULT
+
+test:
+  <<: *DEFAULT
+
