@@ -1,7 +1,6 @@
 ENV["RUBY_ENV"] ||= 'test'
 require_relative '../supermarket'
 require 'rspec'
-require 'webmock/rspec'
 
 RSpec.configure do |config|
   config.mock_with :rspec
