@@ -106,7 +106,7 @@ describe Checkout do
 
       context 'key doesn\'t existed in meta' do
         it 'doesn\'t add to basket' do
-          expect(checkout.scan('GB1')).to eq(nil)
+          expect(checkout.scan(incorrect_code)).to eq(nil)
         end
       end
     end
